@@ -8,10 +8,10 @@
 
 ```bash
 # use npm
-$ npm install react-app-rewire-host  
+$ npm install --save-dev react-app-rewire-host  
 
 # use yarn
-$ yarn add react-app-rewire-host
+$ yarn add --dev react-app-rewire-host
 ```
 
 ## Usage
