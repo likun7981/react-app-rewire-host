@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-host",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/likun7981/react-app-rewired-host#readme",
   "dependencies": {
-    "react-app-rewired": "^1.2.5",
+    "react-app-rewired": "^1.2.7",
     "webpack": "^3.5.6"
   }
 }

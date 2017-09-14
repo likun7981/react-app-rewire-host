@@ -1,13 +1,13 @@
 const webpack = require("webpack");
-const getClientEnvironment = require("react-app-rewired/config/env");
-const paths = require("react-app-rewired/config/paths");
+const paths = require("react-app-rewired/scripts/utils/paths");
+const getClientEnvironment = require(paths.scriptVersion + "/config/env");
 
 const rewireHost = (config, env, hostOptions) => {
   const envs = getClientEnvironment(config.output.publicPath.slice(0, -1));
   let host = hostOptions[process.env.HOST_NAME];
   if (typeof host === "object" && !(host instanceof RegExp)) {
     Object.keys(host).forEach(key => {
-      host[key] = JSON.stringify(host[key]);
+      host[key] = JSON.stringify(host[key]); 
     });
   } else {
     host = JSON.stringify(host || "");
