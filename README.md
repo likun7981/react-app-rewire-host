@@ -50,7 +50,7 @@ Then add a env `HOST_NAME` when you build project in `package.json`
 }
 ```
 
-Finally you can use `process.env.REACT_APP_HOST` in your code and also the build `filename` and `chunkFileName` will add `HOST_NAME` tag.
+Finally you can use `process.env.REACT_APP_HOST` in your code and also the build dir will make a subdir that the name is `HOST_NAME`.
 
 ## License
 MIT
