@@ -55,4 +55,4 @@ function rewriteAppBuild() {
   require.cache[require.resolve(appBuildPath)].exports = reactAppPaths;
 }
 
-module.exports = rewireHost;
+module.exports = createRewireHost;
