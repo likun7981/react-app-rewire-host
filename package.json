@@ -1,17 +1,13 @@
 {
   "name": "react-app-rewire-host",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/likun7981/react-app-rewired-host.git"
   },
-  "keywords": [
-    "host",
-    "create-react-app",
-    "react-app-rewired"
-  ],
+  "keywords": ["host", "create-react-app", "react-app-rewired"],
   "author": "likun",
   "license": "MIT",
   "bugs": {
@@ -19,7 +15,7 @@
   },
   "homepage": "https://github.com/likun7981/react-app-rewired-host#readme",
   "dependencies": {
-    "react-app-rewired": "^1.2.7",
-    "webpack": "^3.5.6"
+    "react-app-rewired": "^1.3.4",
+    "webpack":"^3.8.1"
   }
 }
