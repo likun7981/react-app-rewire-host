@@ -20,7 +20,7 @@ In the `config-overrides.js` for [react-app-rewired](https://github.com/timarney
 
 ```javascript
 /* config-overrides.js */
-const rewireHost = require('react-app-rewire-host');
+const createRewireHost = require('react-app-rewire-host');
 
 module.exports = (config, env)=>{
   
@@ -36,8 +36,8 @@ module.exports = (config, env)=>{
     uat: 'http://xxxuat.api.com',
     pro: 'https://xxx.api.com'
   }
-  config = rewireHost(config, env, hostConfig)
-  return config;
+  const rewireHost = createRewireHost(hostConfig);
+  return rewireHost(config, env);
 }
 ```  
 
